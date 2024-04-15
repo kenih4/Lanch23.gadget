@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>Lancer</title>
+    <link rel="stylesheet" type="text/css" href="design.css">
+    <SCRIPT src="func.js"></SCRIPT>
+  </head>
+  
+  <body onLoad="init()">
+    <!--<g:background id="imgBackground">
+	<g:background id="imgBackground.opacity = 50">-->
+    <g:background>
+    
+      <!---<div onclick="showFlyout();">Lanch</div>-->
+      <form></form>
+      	<input type="button" class="btn_F" onclick="openFold(0);" value="Common"/>
+      	<input type="button" class="btn_F" onclick="openFold(1);" value="マニュアル"/>
+      	<input type="button" class="btn_F" onclick="openFold(6);" value="Users"/>
+      	<input type="button" class="btn_F" onclick="openFold(2);" value="冷却水"/>
+      	<input type="button" class="btn_F" onclick="openFold(3);" value="シフト表"/>
+		<input type="button" class="btn_F" onclick="openFold(5);" value="各種原紙"/>
+      	<input type="button" class="btn_F" onclick="openFold(4);" value="gun_spark_check"/>
+      	<input type="button" class="btn_E" onclick="Excute(5);" value="故障履歴"/>
+      	<input type="button" class="btn_E" onclick="Excute(1);" value="SACLA Tuning"/>
+      	<input type="button" class="btn_E" onclick="Excute(2);" value="svoc-work"/>
+      	<input type="button" class="btn_E" onclick="Excute(3);" value="電荷積算記録"/>
+      	<input type="button" class="btn_F" onclick="openFold(7);" value="INTLK"/>
+      	<input type="button" class="btn_L" onclick="Link(0);" value="Mail"/>
+      	<input type="button" class="btn_L" onclick="Link(1);" value="Ayagiku"/>
+      	<input type="button" class="btn_L" onclick="Link(7);" value="同期収集"/>
+      	<input type="button" class="btn_L" onclick="Link(2);" value="SP8 Staff"/>
+      	<input type="button" class="btn_L" onclick="Link(3);" value="周知"/>
+      	<input type="button" class="btn_L" onclick="Link(4);" value="引継"/>
+      	<input type="button" class="btn_L" onclick="Link(6);" value="QR"/>
+      	<input type="button" class="btn_LE" onclick="LinkE(0);" value="天気"/>
+      	<input type="button" class="btn_LE" onclick="LinkE(1);" value="地図"/>
+		
+
+
+      <!--
+        <BUTTON class="btn_F" accesskey="b" name="myBtn" value="http://xayagiku/">リセット</BUTTON>
+        <BUTTON class="btn_F" accesskey="b" name="myBtn" onclick="LinkE(1)">リセット</BUTTON>
+        <BUTTON accesskey="c" name="myBtn" onclick="LinkE(1)">リセット</BUTTON>
+	  -->
+	          
+      <!--
+	  <a class="btn_L" href="https://sp8sun.spring8.or.jp/am_bin/amlogin">Mail</a>
+	  <a class="btn_L" href="http://xayagiku/" style="text-decoration: none" >Ayagik</a>
+	  <a class="btn_L" href="http://haru08.spring8.or.jp/j/for_staff/" style="text-decoration: none">Staff</a>
+	  <a class="btn_L" href="http://xfelsvra.harima.riken.jp/~xfelopr/pukiwiki/index.php?%E5%91%A8%E7%9F%A5%E5%BE%B9%E5%BA%95%E4%BA%8B%E9%A0%85" style="text-decoration: none" >周知</a>
+	  <a class="btn_L" href="http://xfelsvra.harima.riken.jp/~shiftsummary/" style="text-decoration: none" >引継</a>
+	  <a class="btn_uG_tW" href="http://weathernews.jp/map/#//c=55" style="text-decoration: none" >天気</a>
+	  -->
+	  
+    </g:backround>
+  </body>
+</html>

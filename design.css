@@ -1,0 +1,66 @@
+    body {
+      width: 300px;
+      height: 500px;
+      /*font-family:'Times New Roman';
+	  background-color: transparent;*/
+    }
+
+    /**/
+	BUTTON{
+		/*background-color:transparent;
+		background-color:rgba(255,255,255,0.5)*/
+		/*background-color:black;
+		opacity:0.7;
+		filter: alpha(opacity=70);*/
+	}
+	
+	
+    div {
+      font-size: 12pt;
+      text-align: center;
+    }
+	.btn_F {
+		background-color: #000;
+		color: #F8F8FF;
+		border-radius: 8px 8px 0px 0px;
+		-moz-border-radius: 8px 8px 0px 0px;
+		-webkit-border-radius: 8px 8px 0px 0px;
+		border: 1px solid #CCC;
+		border-bottom: 3px solid #0099CC;
+		width: 90px;
+		padding: 4px 0;
+	}
+	.btn_E {
+		background-color: #000;
+		color: #F8F8FF;
+		border-radius: 8px 8px 0px 0px;
+		-moz-border-radius: 8px 8px 0px 0px;
+		-webkit-border-radius: 8px 8px 0px 0px;
+		border: 1px solid #CCC;
+		border-bottom: 3px solid #32CD32;
+		width: 90px;
+		padding: 4px 0;
+	}
+	.btn_L {
+		background-color: #000;
+		color: #F8F8FF;
+		border-radius: 8px 8px 0px 0px;
+		-moz-border-radius: 8px 8px 0px 0px;
+		-webkit-border-radius: 8px 8px 0px 0px;
+		border: 1px solid #CCC;
+		border-bottom: 3px solid #DAA520;
+		width: 90px;
+		padding: 4px 0;
+	}
+	
+	.btn_LE {
+		background-color: #000;
+		color: #F8F8FF;
+		border-radius: 8px 8px 0px 0px;
+		-moz-border-radius: 8px 8px 0px 0px;
+		-webkit-border-radius: 8px 8px 0px 0px;
+		border: 1px solid #CCC;
+		border-bottom: 3px solid #777;
+		width: 90px;
+		padding: 4px 0;
+	}	

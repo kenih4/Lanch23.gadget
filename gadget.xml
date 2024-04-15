@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<gadget>
+  <name>Lanch</name>
+  <version>1.0.0.0</version>
+  <author name="kenichi" />
+  <copyright>(C) 2012</copyright>
+  <description>rev.10</description>
+<logo src="logo.png" />
+<icons>
+<icon height="48" width="48" src="icon.png" />
+</icons>
+  <hosts>
+    <host name="sidebar">
+      <base type="HTML" apiVersion="1.0.0" src="main.html" />
+      <permissions>Full</permissions>
+      <platform minPlatformVersion="1.0" />
+    </host>
+  </hosts>
+</gadget>
