@@ -19,7 +19,7 @@
       font-size: 12pt;
       text-align: center;
     }
-	.btn_F {
+	.btn_B {
 		background-color: #000;
 		color: #F8F8FF;
 		border-radius: 8px 8px 0px 0px;
@@ -30,7 +30,7 @@
 		width: 90px;
 		padding: 4px 0;
 	}
-	.btn_E {
+	.btn_G {
 		background-color: #000;
 		color: #F8F8FF;
 		border-radius: 8px 8px 0px 0px;
@@ -41,7 +41,7 @@
 		width: 90px;
 		padding: 4px 0;
 	}
-	.btn_L {
+	.btn_O {
 		background-color: #000;
 		color: #F8F8FF;
 		border-radius: 8px 8px 0px 0px;
@@ -53,7 +53,7 @@
 		padding: 4px 0;
 	}
 	
-	.btn_LE {
+	.btn_Dark {
 		background-color: #000;
 		color: #F8F8FF;
 		border-radius: 8px 8px 0px 0px;
