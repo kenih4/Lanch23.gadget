@@ -67,7 +67,11 @@ function exe(n) {
         if (a.folder) {
             System.Shell.execute("explorer.exe", toWinPath(expand(a.folder, vars)));
         } else if (a.url) {
-            System.Shell.execute(expand(a.url, vars));
+            if (a.browser) {
+                System.Shell.execute(toWinPath(expand(a.browser, vars)), expand(a.url, vars));
+            } else {
+                System.Shell.execute(expand(a.url, vars));
+            }
         } else if (a.run) {
             var target = toWinPath(expand(a.run, vars));
             if (a.args) {

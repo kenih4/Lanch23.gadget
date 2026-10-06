@@ -8,7 +8,8 @@
 //   cls   : 色 (B=青 / G=緑 / O=橙 / SHIKIRI=区切り(空きボタン))
 //   do    : 実行内容の配列。要素は以下のいずれか
 //     { folder: 'パス' }               エクスプローラーでフォルダを開く
-//     { url:    'http://...' }         ブラウザで開く
+//     { url:    'http://...' }         既定のブラウザで開く
+//     { url:    'http://...', browser: '{chrome}' }  指定したブラウザで開く
 //     { run:    'パス', args: '引数' }  ファイル/exeを実行 (argsは省略可)
 //   パスの区切りは / でも \ でもOK (folder/run は / を \ に変換します)
 var CONFIG = {
@@ -20,7 +21,8 @@ var CONFIG = {
         common:  '{opr18}/common',
         accinfo: '{common}/sesaccfs2/operation/加速器情報',
         gitdir:  'C:/Users/kenic/Dropbox/gitdir',
-        note:    'C:/me/bin/open_note.exe'
+        note:    'C:/me/bin/open_note.exe',
+        chrome:  'C:/Program Files/Google/Chrome/Application/chrome.exe'
     },
 
     buttons: [
@@ -51,26 +53,18 @@ var CONFIG = {
 
         { label: 'QR',        cls: 'O', "do": [{ url: 'http://qrserver/' }] },
         { label: 'カレンダー', cls: 'O', "do": [{ url: 'http://calsrv01.spring8.or.jp/cal/' }] },
-        { label: 'LOG検索',   cls: 'O', "do": [{ url: '{opr19}/~logsearch/' }] },
+        { label: 'カレンダーgantt',   cls: 'O', "do": [{ url: 'http://saclaopr19.spring8.or.jp/~lognote/calendar/gantt-group-tasks-together.html', browser: '{chrome}' }] },
 
-        { label: 'svoc-work',         cls: 'B', "do": [{ folder: '{xfelfs}/share/svoc-work' }] },
-        { label: 'SACLA_Tuning_Data', cls: 'B', "do": [{ folder: '{opr18}/shared/SACLA_Tuning_Data' }] },
+        { label: '-',         cls: 'B', "do": [{ folder: '{xfelfs}/share/svoc-work' }] },
+        { label: '-', cls: 'B', "do": [{ folder: '{opr18}/shared/SACLA_Tuning_Data' }] },
         { label: 'SCM',               cls: 'B', "do": [{ folder: '{xfelfs}/share/SCM/ScreenInfo' }] },
 
         { label: '立上調整',  cls: 'B', "do": [{ folder: '{accinfo}/立上げ調整' }] },
         { label: 'u運転',     cls: 'G', "do": [{ run: '{gitdir}/hikitsugi/docs/u運転メモ.xlsx' }] },
-        { label: 'ランチ',    cls: 'B', "do": [{ folder: 'C:/Users/kenic/OneDrive/Desktop/ランチ' }] },
-
-        { label: 'SACLA', cls: 'G', "do": [{ run: '{note}', args: 'SACLA 0' }] },
-        { label: 'SCSS',  cls: 'G', "do": [{ run: '{note}', args: 'SCSS 0' }] },
-        { label: 'SP8',   cls: 'G', "do": [{ run: '{note}', args: 'SP8 0' }] },
-
-        { label: '先月', cls: 'G', "do": [{ run: '{note}', args: 'SACLA 1' }] },
-        { label: '先月', cls: 'G', "do": [{ run: '{note}', args: 'SCSS 1' }] },
-        { label: '先月', cls: 'G', "do": [{ run: '{note}', args: 'SP8 1' }] },
+        { label: 'ランチ',    cls: 'B', "do": [{ folder: 'C:/Users/kenic/Dropbox/Shortcut' }] },
 
         { label: '朝MT',     cls: 'B', "do": [{ folder: '{common}/SACLA朝ミーティング資料/{year}_acc' }] },
-        { label: 'log_note', cls: 'B', "do": [{ folder: '{oprfs}/log_note/SACLA/operation_log/{year}' }] },
+        { label: '-', cls: 'B', "do": [{ folder: '' }] },
         { label: '朝MT SR',  cls: 'B', "do": [{ folder: '{accinfo}/朝ミーティング報告事項/{year}' }] },
 
         { label: 'start仕事', cls: 'G', "do": [{ run: '{gitdir}/start_Shigoto/start_Shigoto.bat' }] }
