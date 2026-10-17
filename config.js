@@ -48,14 +48,14 @@ var CONFIG = {
         { label: 'DB SCSS+',  cls: 'O', "do": [{ url: 'http://xfweb-dmz-03.spring8.or.jp/cgi-bin/MDAQ/mdaq_group_list.py' }] },
 
         { label: 'SP8 Staff', cls: 'O', "do": [{ url: 'http://staff.spring8.or.jp/staff-mt/spring8_portal/' }] },
-        { label: 'SR予定表',  cls: 'O', "do": [{ url: 'http://haruya.spring8.or.jp/ExpFaci/index.html' }] },
+        { label: '-',  cls: 'O', "do": [{ url: 'http://haruya.spring8.or.jp/ExpFaci/index.html' }] },
         { label: 'サマリー',  cls: 'O', "do": [{ url: '{opr19}/~summary/display_ui.html?sort=main_id%20desc&limit=0,5#EDIT' }] },
 
-        { label: 'QR',        cls: 'O', "do": [{ url: 'http://qrserver/' }] },
+        { label: 'SR予定表',  cls: 'O', "do": [{ url: 'http://haruya.spring8.or.jp/ExpFaci/index.html' }] },
         { label: 'カレンダー', cls: 'O', "do": [{ url: 'http://calsrv01.spring8.or.jp/cal/' }] },
         { label: 'カレンダーgantt',   cls: 'O', "do": [{ url: 'http://saclaopr19.spring8.or.jp/~lognote/calendar/gantt-group-tasks-together.html', browser: '{chrome}' }] },
 
-        { label: '-',         cls: 'B', "do": [{ folder: '{xfelfs}/share/svoc-work' }] },
+        { label: '仕事資料',         cls: 'B', "do": [{ folder: '{opr18}/ses-users/jkenichi/仕事資料' }] },
         { label: '-', cls: 'B', "do": [{ folder: '{opr18}/shared/SACLA_Tuning_Data' }] },
         { label: 'SCM',               cls: 'B', "do": [{ folder: '{xfelfs}/share/SCM/ScreenInfo' }] },
 
@@ -64,9 +64,21 @@ var CONFIG = {
         { label: 'ランチ',    cls: 'B', "do": [{ folder: 'C:/Users/kenic/Dropbox/Shortcut' }] },
 
         { label: '朝MT',     cls: 'B', "do": [{ folder: '{common}/SACLA朝ミーティング資料/{year}_acc' }] },
-        { label: '-', cls: 'B', "do": [{ folder: '' }] },
+        { label: '-', cls: 'Dark', "do": [{ folder: '' }] },
         { label: '朝MT SR',  cls: 'B', "do": [{ folder: '{accinfo}/朝ミーティング報告事項/{year}' }] },
 
-        { label: 'start仕事', cls: 'G', "do": [{ run: '{gitdir}/start_Shigoto/start_Shigoto.bat' }] }
+        { label: 'start仕事💡', cls: 'G', "do": [{ run: 'pythonw', args: '{gitdir}/start_Shigoto/start_Shigoto_gui.pyw --start' }] },
+        { label: 'ログ', cls: 'G', "do": [{ run: 'pythonw', args: '{gitdir}/CopyAndOpenExcel/download_LOGNOTE_GUI.py' }] },
+        { label: '-', cls: 'Dark', "do": [{ folder: '' }] },
+
+
+
+        { label: '', cls: 'SHIKIRI', "do": [] },
+        { label: '', cls: 'SHIKIRI', "do": [] },
+        { label: '', cls: 'SHIKIRI', "do": [] },
+
+        { label: '音', cls: 'Dark', "do": [{ run: '{gitdir}/Oto_New/oto_monitor_gui.pyw' }] },
+        { label: 'サーバー接続', cls: 'Dark', "do": [{ run: '{gitdir}//Startup/server_login.bat' }] },
+        { label: '設定ファイル', cls: 'Dark', "do": [{ run: 'C:/Users/kenic/AppData/Local/Programs/Microsoft VS Code/Code.exe', args: 'C:/Users/kenic/Dropbox/gitdir/Lanch23.gadget' }] }
     ]
 };
